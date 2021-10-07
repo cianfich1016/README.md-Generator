@@ -13,6 +13,11 @@ const questionsPrompt = () => {
       },
       {
         type: 'input',
+        name: 'github',
+        message: 'Please enter a link to your GitHub profile.',
+      },
+      {
+        type: 'input',
         name: 'email',
         message: 'What is your email address?',
       },

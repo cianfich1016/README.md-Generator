@@ -18,15 +18,30 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-    * Installation
-    * Usage
-    * Tests
-    * Credits
-    * License
-    * Questions
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Tests](#tests)
+  * [Credits](#credits)
+  * [License](#license)
+  * [Contact](#contact)
 
   ## Installation
   ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## Tests
+  ${data.tests}
+
+  ## Credits
+  Contributors to the project were: ${data.contributors}
+
+  ## License
+  The license required for this project is ${data.license}.
+
+  ## Contact
+  With any questions or concerns, please contact me via GitHub at [${data.name}](${data.github}) or by email at ${data.email}.
 
 `;
 }
