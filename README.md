@@ -17,6 +17,11 @@
   ## Usage
   Run the index.js file from the terminal using node. Type "node index.js" into the terminal and see automated questions appear. Type answers or choose answers, and the README.md file will be generated. 
 
+  Images of generator use. Questions generated are in white text and blue answers are what a user types in or chooses. View a full use and markdown created as well as preview.
+
+  ![Command Line image of questions and answers.](./images/Image1.png)
+  ![Markdown and preview view of generated file.](./images/Image2.png)
+  
   View [video tutorial](https://watch.screencastify.com/v/y52BQmz8OEcd6iw3cqEs) on the usage of the README.md generator.
 
   ## License
