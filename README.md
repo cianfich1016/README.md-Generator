@@ -17,6 +17,8 @@
   ## Usage
   Run the index.js file from the terminal using node. Type "node index.js" into the terminal and see automated questions appear. Type answers or choose answers, and the README.md file will be generated. 
 
+  View [video tutorial](https://watch.screencastify.com/v/y52BQmz8OEcd6iw3cqEs) on the usage of the README.md generator.
+
   ## License
   License for this project: [MIT License](https://choosealicense.com/licenses/mit/)
 
