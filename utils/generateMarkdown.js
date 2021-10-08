@@ -1,30 +1,30 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Create a function that returns a license badge based on which license is passed in. Empty string if No license choice selected is chosen.
+
 const renderLicenseBadge = (license) => {
   switch(license){
     case "GNU AGPLv3":
-      badge = "![GNU AGPLv3 License Badge](https://img.shields.io/badge/License-GNU_AGPLv3-yellow)";
+      badge = "[![GNU AGPLv3 License Badge](https://img.shields.io/badge/License-GNU_AGPLv3-yellow)](https://img.shields.io/badge/License-GNU_AGPLv3-yellow)";
       break;
     case "GNU GPLv3":
-      badge = "![GNU GPLv3 License Badge](https://img.shields.io/badge/License-GNU_GPLv3-yellowgreen)";
+      badge = "[![GNU GPLv3 License Badge](https://img.shields.io/badge/License-GNU_GPLv3-yellowgreen)](https://img.shields.io/badge/License-GNU_GPLv3-yellowgreen)";
       break;
     case "GNU LGPLv3":
-      badge = "![GNU LGPLv3 License Badge](https://img.shields.io/badge/License-GNU_LGPLv3-green)";
+      badge = "[![GNU LGPLv3 License Badge](https://img.shields.io/badge/License-GNU_LGPLv3-green)](https://img.shields.io/badge/License-GNU_LGPLv3-green)";
       break;
     case "Mozilla Public License 2.0":
-      badge = "![Mozilla Public License 2.0 License Badge](https://img.shields.io/badge/License-Mozilla_Public_License_2.0-orange)";
+      badge = "[![Mozilla Public License 2.0 License Badge](https://img.shields.io/badge/License-Mozilla_Public_License_2.0-orange)](https://img.shields.io/badge/License-Mozilla_Public_License_2.0-orange)";
       break;
     case "Apache License 2.0":
-      badge = "![Apache License 2.0 License Badge](https://img.shields.io/badge/License-Apache_License_2.0-red)";
+      badge = "[![Apache License 2.0 License Badge](https://img.shields.io/badge/License-Apache_License_2.0-red)](https://img.shields.io/badge/License-Apache_License_2.0-red)";
       break;
     case "MIT License":
-      badge = "![MIT License Badge](https://img.shields.io/badge/License-MIT_License-blue)";
+      badge = "[![MIT License Badge](https://img.shields.io/badge/License-MIT_License-blue)](https://img.shields.io/badge/License-MIT_License-blue)";
       break;
     case "Boost Software License 1.0":
-      badge = "![Boost Software License 1.0 License Badge](https://img.shields.io/badge/License-Boost_Software_License_1.0-lightgrey)";
+      badge = "[![Boost Software License 1.0 License Badge](https://img.shields.io/badge/License-Boost_Software_License_1.0-lightgrey)](https://img.shields.io/badge/License-Boost_Software_License_1.0-lightgrey)";
       break;
     case "The Unlicense":
-      badge = "![The Unlicense License Badge](https://img.shields.io/badge/License-The_Unlicense-brightgreen)";
+      badge = "[![The Unlicense License Badge](https://img.shields.io/badge/License-The_Unlicense-brightgreen)](https://img.shields.io/badge/License-The_Unlicense-brightgreen)";
       break;
     default:
       badge = "";   
@@ -33,13 +33,8 @@ const renderLicenseBadge = (license) => {
   return badge;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
+// Create a function that returns the license section of README. Empty string if No license choice selected is chosen.
+const renderLicenseSection = (license) => {
   switch(license){
     case "GNU AGPLv3":
       writing = "[GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)";
@@ -72,7 +67,7 @@ function renderLicenseSection(license) {
   return writing;
 }
 
-// TODO: Create a function to generate markdown for README
+// Create a function to generate markdown for README.
 const generateMarkdown = (data) => {
   return `
 
@@ -111,5 +106,5 @@ const generateMarkdown = (data) => {
 
 `;
 }
-
+//Export the generateMarkdown function for use in index.js file.
 module.exports = generateMarkdown;
