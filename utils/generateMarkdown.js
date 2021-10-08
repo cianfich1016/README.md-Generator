@@ -45,8 +45,26 @@ function renderLicenseSection(license) {
       writing = "[GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)";
       break;
     case "GNU GPLv3":
-      writing = "[GNU GPLv3 License Badge](https://choosealicense.com/licenses/gpl-3.0/)";
+      writing = "[GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)";
       break;
+    case "GNU LGPLv3":
+      writing = "[GNU LGPLv3](https://choosealicense.com/licenses/lgpl-3.0/)";
+      break;  
+    case "Mozilla Public License 2.0":
+      writing = "[Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)";
+      break;  
+    case "Apache License 2.0":
+      writing = "[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)";
+      break;  
+    case "MIT License":
+      writing = "[MIT License](https://choosealicense.com/licenses/mit/)";
+      break; 
+    case "Boost Software License 1.0":
+      writing = "[Boost Software License 1.0](https://choosealicense.com/licenses/bsl-1.0/)";
+      break; 
+    case "The Unlicense":
+      writing = "[The Unlicense](https://choosealicense.com/licenses/unlicense/)";
+      break;     
     default:
       writing = "";   
       break;
@@ -86,7 +104,7 @@ const generateMarkdown = (data) => {
   Contributors to the project: ${data.contributors}
 
   ## License
-  License for this project: ${renderLicenseSection(data.license)}.
+  License for this project: ${renderLicenseSection(data.license)}
 
   ## Contact
   With any questions or concerns, please contact me via GitHub at [${data.name}](${data.github}) or by email at ${data.email}.
