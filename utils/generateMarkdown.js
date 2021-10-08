@@ -3,13 +3,31 @@
 function renderLicenseBadge(license) {
   switch(license){
     case "GNU AGPLv3":
-      badge = "![GNU AGPLv3 License Badge](https://img.shields.io/badge/License-GNU_AGPLv3-blue)"
+      badge = "![GNU AGPLv3 License Badge](https://img.shields.io/badge/License-GNU_AGPLv3-yellow)";
       break;
-    case "MIT":
-      console.log("no");
+    case "GNU GPLv3":
+      badge = "![GNU GPLv3 License Badge](https://img.shields.io/badge/License-GNU_GPLv3-yellowgreen)";
       break;
-    default: 
-      console.log("Sorry.");  
+    case "GNU LGPLv3":
+      badge = "![GNU LGPLv3 License Badge](https://img.shields.io/badge/License-GNU_LGPLv3-green)";
+      break;
+    case "Mozilla Public License 2.0":
+      badge = "![Mozilla Public License 2.0 License Badge](https://img.shields.io/badge/License-Mozilla_Public_License_2.0-orange)";
+      break;
+    case "Apache License 2.0":
+      badge = "![Apache License 2.0 License Badge](https://img.shields.io/badge/License-Apache_License_2.0-red)";
+      break;
+    case "MIT License":
+      badge = "![MIT License Badge](https://img.shields.io/badge/License-MIT_License-blue)";
+      break;
+    case "Boost Software License 1.0":
+      badge = "![Boost Software License 1.0 License Badge](https://img.shields.io/badge/License-Boost_Software_License_1.0-lightgrey)";
+      break;
+    case "The Unlicense":
+      badge = "![The Unlicense License Badge](https://img.shields.io/badge/License-The_Unlicense-brightgreen)";
+      break;
+    default:
+      badge = "";   
       break;
   }
   return badge;
@@ -56,7 +74,7 @@ function generateMarkdown(data) {
   Contributors to the project were: ${data.contributors}
 
   ## License
-  The license required for this project is ${data.license}.
+  License for this project: ${data.license}.
 
   ## Contact
   With any questions or concerns, please contact me via GitHub at [${data.name}](${data.github}) or by email at ${data.email}.
