@@ -2,10 +2,10 @@
 
   # README.md Generator
 
-  [![MIT License Badge](https://img.shields.io/badge/License-MIT_License-blue)](https://img.shields.io/badge/License-MIT_License-blue)
+  [![Mozilla Public License 2.0 License Badge](https://img.shields.io/badge/License-Mozilla_Public_License_2.0-orange)](https://img.shields.io/badge/License-Mozilla_Public_License_2.0-orange)
 
   ## Description
-  This project allows a user to create a unique README.md file right from his or her very own terminal from the generation of questions and input response. The automatic creation saves a user time while producing a markdown file with a high quality layout and valuable information each and every time. The understanding of the power of the terminal and node.js allowed for the creation of this generator.
+  This project allows users create a unique README.md file for repositories right from the terminal using Node.js. By answering prompted questions, a markdown file is generated.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -16,13 +16,19 @@
   * [Contact](#contact)
 
   ## Installation
-  Clone repository. Install npm and the package "inquirer" from npmjs.com by running "npm init" and "npm i inquirer" respectively in the terminal.
+  Node, npm and the specific package "inquirer" need to be installed. Visit npmjs.com for more information on installation of node. Run "npm install" in command line following node install and "npm i inquirer" following npm install.
 
   ## Usage
-  Run the index.js file from the terminal using node. Type "node index.js" into the terminal and see automated questions appear. Type answers or choose answers, and the README.md file will be generated. 
+  Run the "node index.js" command right from the terminal once navigated to the appropriate folder with the .js file. See questions appear and type or choose specific answers and a unique README.md file will be generated.
+
+  ## Tests
+  None.
+
+  ## Credits
+  Contributors to the project: Completed the project myself.
 
   ## License
-  License for this project: [MIT License](https://choosealicense.com/licenses/mit/)
+  License for this project: [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
 
   ## Contact
   With any questions or concerns, please contact me via GitHub at [cianfich1016](https://github.com/cianfich1016) or by email at cianfich@gmail.com.
