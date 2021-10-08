@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+const renderLicenseBadge = (license) => {
   switch(license){
     case "GNU AGPLv3":
       badge = "![GNU AGPLv3 License Badge](https://img.shields.io/badge/License-GNU_AGPLv3-yellow)";
@@ -39,15 +39,27 @@ function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  switch(license){
+    case "GNU AGPLv3":
+      writing = "[GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)";
+      break;
+    case "GNU GPLv3":
+      writing = "[GNU GPLv3 License Badge](https://choosealicense.com/licenses/gpl-3.0/)";
+      break;
+    default:
+      writing = "";   
+      break;
+  }
+  return writing;
+}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+const generateMarkdown = (data) => {
   return `
 
   # ${data.title}
 
-  ## Badges
   ${renderLicenseBadge(data.license)}
 
   ## Description
@@ -71,10 +83,10 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Credits
-  Contributors to the project were: ${data.contributors}
+  Contributors to the project: ${data.contributors}
 
   ## License
-  License for this project: ${data.license}.
+  License for this project: ${renderLicenseSection(data.license)}.
 
   ## Contact
   With any questions or concerns, please contact me via GitHub at [${data.name}](${data.github}) or by email at ${data.email}.
