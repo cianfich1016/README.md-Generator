@@ -64,7 +64,7 @@ const questionsPrompt = () => {
 // Create a function to write README file
 const writeToFile = (data) => {
     fs.writeFile('README.md', generateMarkdown(data), (err) =>
-    err ? console.error(err) : console.log(data)
+    err ? console.error(err) : console.log("View your README.md file now!")
   );
    
 };
